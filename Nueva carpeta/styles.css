@@ -1,0 +1,93 @@
+/* Variables de color CSS3 */
+:root {
+    --js-yellow: #f7df1e;
+    --dark-grey: #222;
+    --light-grey: #f4f4f4;
+    --accent-color: #3eaf7c;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    background-color: var(--light-grey);
+    color: #333;
+}
+
+/* Header con Graduante CSS3 */
+header {
+    background: linear-gradient(135deg, var(--js-yellow) 0%, #ffb300 100%);
+    color: var(--dark-grey);
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Navegación Sticky (se queda fija al hacer scroll) */
+nav {
+    background-color: var(--dark-grey);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    color: var(--js-yellow);
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Secciones */
+section {
+    margin-bottom: 30px;
+    border-left: 5px solid var(--js-yellow);
+    padding-left: 20px;
+}
+
+.highlight {
+    background-color: #fffde7;
+    border-radius: 0 8px 8px 0;
+    padding: 20px;
+}
+
+/* Estilo para código */
+pre {
+    background: #2d2d2d;
+    color: #ccc;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-grey);
+    color: #aaa;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,178 @@
+/* Variables de color CSS3 */
+:root {
+    --js-yellow: #f7df1e;
+    --dark-grey: #222;
+    --light-grey: #f4f4f4;
+    --accent-color: #3eaf7c;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    background-color: var(--light-grey);
+    color: #333;
+}
+
+/* Header con Graduante CSS3 */
+header {
+    background: linear-gradient(135deg, var(--js-yellow) 0%, #ffb300 100%);
+    color: var(--dark-grey);
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* NavegaciÃ³n Sticky (se queda fija al hacer scroll) */
+nav {
+    background-color: var(--dark-grey);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: color 0.3s ease; /* TransiciÃ³n suave */
+}
+
+nav a:hover {
+    color: var(--js-yellow);
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Secciones */
+section {
+    margin-bottom: 30px;
+    border-left: 5px solid var(--js-yellow);
+    padding-left: 20px;
+}
+
+.highlight {
+    background-color: #fffde7;
+    border-radius: 0 8px 8px 0;
+    padding: 20px;
+}
+
+/* Estilo para cÃ³digo */
+pre {
+    background: #2d2d2d;
+    color: #ccc;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-grey);
+    color: #aaa;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del Formulario */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 25px;
+}
+
+/* Grupos de Entrada */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* Importante para que el padding no desborde */
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Botón de Envío */
+.btn-submit {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
