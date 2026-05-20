@@ -1,0 +1,70 @@
+.box{
+    background-color: blueviolet;
+    width:  200px;
+    height:  200px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container .box{
+    display: flex;
+    justify-content: center;/** pone los elementos al centro de manera horizontal*/
+    align-items: center; /**pone los elementos al centro de manera vertical */
+
+}
+/** USO DEL GRID */
+.gridbox {
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+grid-template-rows: auto;
+    gap: .5rem;
+}
+
+
+   .grid-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+ 
+.grid-container .box_c{
+    grid-area: 3 / 4 / 4 / 7;
+    /**
+        primer elemento (3) equivale a la fila donde inicia
+        segundo elemento (4) equivale a la columna donde inicia
+        tercer elemento (4) equivale a la fila donde termina (SIEMPRE SE TOMAN UN NUMERO MAS, EN ESTE CASO ES 4, PORQUE TERMINA EN LA FILA 3)
+        cuarto elemento (7) equivale a la columna donde termina (SIEMPRE SE TOMAN UN NUMERO MAS, EN ESTE CASO ES 7, PORQUE TERMINA EN LA COLUMNA 6)
+    */
+    width: 100%;
+}
+
+/** Medias Queries */
+/**
+min-width
+max-width
+min-heigt
+max-heigt
+*/
+
+@media (min-width: 576px) {
+    .box_a
+        background-color: brown;
+}
+
+/*agregando una media query de 768px a 992*/
+          
+          
+          {
+           
