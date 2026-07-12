@@ -1,0 +1,32 @@
+const express = require('express')
+const app = express()
+
+// llamando las rutas de las mesas
+const mesasRoutes = require('./routes/mesa.routes')
+app.use(express.json())
+const authRoutes = require('./routes/auth.routes')
+
+// CORRECCIÓN: Importar el archivo de rutas de reservaciones
+
+const reservacionRoutes = require('./routes/reservacion.routes');
+
+app.listen(3000, () => {
+    console.log("Hola, este es el servidor http://localhost:3000/")
+})
+
+// Ruta principal
+app.get('/', (req, res) => {
+    res.json({
+        mensaje: 'Bienvenidos a la API de Restaurante',
+        descripcion: 'API que gestiona mesas y reservaciones en base al rol del usuario',
+        version: '1.0.0',
+    })
+})
+
+// usando las rutas de las mesas
+app.use('/api/v1/mesas', mesasRoutes)
+app.use('/api/v1/auth', authRoutes)
+
+
+// Debe quedar así para que herede correctamente el prefijo /api/v1
+app.use('/api/v1/reservaciones/1', reservacionRoutes);
